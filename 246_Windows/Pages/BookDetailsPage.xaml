@@ -1,0 +1,25 @@
+﻿<Page x:Class="_246_Windows.Pages.BookDetailsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_246_Windows.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BookDetailsPage">
+
+    <StackPanel>
+        <TextBlock Text="Детали книги" FontSize="22" Margin="0,0,0,8"/>
+        <TextBlock x:Name="TitleBlock" FontSize="18"/>
+        <TextBlock x:Name="AuthorBlock" Margin="0,4,0,0"/>
+        <TextBlock x:Name="YearBlock" Margin="0,4,0,0"/>
+
+
+        <TextBlock Text="{Binding Title}" FontSize="18"/>
+        <TextBlock  Text="{Binding Author}" Margin="0,4,0,0"/>
+        <TextBlock  Text="{Binding Year}" Margin="0,4,0,0"/>
+        
+        <Button Content="Назад" Margin="0,12,0,0"  Width="100"/>
+        <Button Content="Продать" Margin="0,12,0,0" Click="Bye_Click" Width="100"/>
+    </StackPanel>
+</Page>
